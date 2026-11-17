@@ -1,0 +1,128 @@
+{
+  "users": [
+    {
+      "id": "usr-1",
+      "name": "Michał Zając",
+      "email": "michal@edugear.pl",
+      "password": "$2b$10$kGKU8qd1AIhIkKg8MpByWu3bzIXx0o3Ve2SdX/4GTLvmTA13a3ui2",
+      "role": "student",
+      "createdAt": "2026-11-17T10:00:00.000Z"
+    },
+    {
+      "id": "usr-2",
+      "name": "Jan Kowalski",
+      "email": "student@edugear.pl",
+      "password": "$2b$10$kGKU8qd1AIhIkKg8MpByWu3bzIXx0o3Ve2SdX/4GTLvmTA13a3ui2",
+      "role": "student",
+      "createdAt": "2026-11-17T10:05:00.000Z"
+    },
+    {
+      "id": "usr-3",
+      "name": "Anna Nowak (Opiekun)",
+      "email": "opiekun@edugear.pl",
+      "password": "$2b$10$kGKU8qd1AIhIkKg8MpByWu3bzIXx0o3Ve2SdX/4GTLvmTA13a3ui2",
+      "role": "caretaker",
+      "createdAt": "2026-11-17T09:00:00.000Z"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "eq-1",
+      "name": "Kamera Sony Alpha A7 III",
+      "category": "Kamery i aparaty",
+      "description": "Pełnoklatkowy aparat bezlusterkowy 24.2 MP z możliwością nagrywania 4K HDR. Wyposażony w obiektyw 28-70mm.",
+      "status": "available",
+      "serialNumber": "SN-SONY-7301",
+      "location": "Pracownia Multimedialna 104",
+      "imageUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2026-11-17T09:00:00.000Z"
+    },
+    {
+      "id": "eq-2",
+      "name": "Laptop Dell Latitude 5520",
+      "category": "Laptopy",
+      "description": "Procesor Intel Core i7-1185G7, 16 GB RAM, dysk 512 GB SSD NVMe. Zainstalowane oprogramowanie do montażu i programowania.",
+      "status": "available",
+      "serialNumber": "SN-DELL-5520",
+      "location": "Pracownia Multimedialna 104",
+      "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2026-11-17T09:00:00.000Z"
+    },
+    {
+      "id": "eq-3",
+      "name": "Zestaw Arduino Starter Kit v2",
+      "category": "Elektronika i robotyka",
+      "description": "Oryginalna płytka Arduino UNO Rev3 wraz z kompletem czujników, wyświetlaczem LCD, silnikami serwo i płytką stykową.",
+      "status": "available",
+      "serialNumber": "SN-ARD-8812",
+      "location": "Laboratorium Robotyki 202",
+      "imageUrl": "https://images.unsplash.com/photo-1553406830-ef2513450d76?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2026-11-17T09:00:00.000Z"
+    },
+    {
+      "id": "eq-4",
+      "name": "Aparat Canon EOS 250D + 18-55mm",
+      "category": "Kamery i aparaty",
+      "description": "Lekka lustrzanka cyfrowa z ruchomym ekranem dotykowym, nagrywaniem 4K i systemem Dual Pixel CMOS AF.",
+      "status": "available",
+      "serialNumber": "SN-CAN-2501",
+      "location": "Pracownia Multimedialna 104",
+      "imageUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2026-11-17T09:00:00.000Z"
+    },
+    {
+      "id": "eq-5",
+      "name": "Projektor Epson EB-FH52 Full HD",
+      "category": "Audio i wideo",
+      "description": "Jasność 4000 lumenów, rozdzielczość Full HD 1080p, złącza HDMI, USB i łączność bezprzewodowa Wi-Fi.",
+      "status": "available",
+      "serialNumber": "SN-EPS-4000",
+      "location": "Sala Konferencyjna 12",
+      "imageUrl": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2026-11-17T09:00:00.000Z"
+    },
+    {
+      "id": "eq-6",
+      "name": "Mikrofony bezprzewodowe Rode Wireless GO II",
+      "category": "Audio i wideo",
+      "description": "Dwukanałowy kompaktowy bezprzewodowy system mikrofonowy ze wbudowanymi mikrofonami dookólnymi i rejestratorem.",
+      "status": "available",
+      "serialNumber": "SN-RODE-9921",
+      "location": "Pracownia Multimedialna 104",
+      "imageUrl": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2026-11-17T09:00:00.000Z"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "res-1",
+      "equipmentId": "eq-1",
+      "equipmentName": "Kamera Sony Alpha A7 III",
+      "userId": "usr-1",
+      "userName": "Michał Zając",
+      "userEmail": "michal@edugear.pl",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-21",
+      "purpose": "Piątkowe zajęcia koła multimedialnego - nagranie wywiadu szkolnego",
+      "status": "approved",
+      "caretakerNotes": "Zatwierdzono. Odbiór w piątek o 9:00 w sali 104.",
+      "createdAt": "2026-11-17T10:15:00.000Z",
+      "updatedAt": "2026-11-17T11:00:00.000Z"
+    },
+    {
+      "id": "res-2",
+      "equipmentId": "eq-3",
+      "equipmentName": "Zestaw Arduino Starter Kit v2",
+      "userId": "usr-2",
+      "userName": "Jan Kowalski",
+      "userEmail": "student@edugear.pl",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-24",
+      "purpose": "Przygotowanie projektu stacji pogodowej na olimpiadę techniczną",
+      "status": "pending",
+      "caretakerNotes": "",
+      "createdAt": "2026-11-17T11:20:00.000Z",
+      "updatedAt": "2026-11-17T11:20:00.000Z"
+    }
+  ]
+}
